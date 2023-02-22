@@ -1,0 +1,16 @@
+
+* {
+    margin: 0%;
+    padding: 0%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-family: 'Bitter', serif;
+    font-family: 'Noto Nastaliq Urdu', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    height: auto;
+}

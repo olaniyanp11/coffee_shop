@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Noto+Nastaliq+Urdu&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <section class="page0">
+        <nav>
+            <img src="../images/coffee_logo.png" alt="" data-aos="slide-right" data-aos-duration="1000">
+            <ul data-aos="fade-left" data-aos-delay="200" data-aos-duration="700">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Location</a></li>
+            </ul>
+        </nav>
+        <section class="page1">
+            <div class="hero">
+                <h1 data-aos="fade-up" data-aos-delay="800">Central Coffee</h1>
+                <p data-aos="fade-up" data-aos-delay="1000">
+                    Welcome to our coffee website
+                </p>
+            </div>
+        </section>
+    </section>
+    <section class="page2">
+        <h2 data-aos="fade-up" data-aos-duration="500">About</h2>
+        <p data-aos="fade-up" data-aos-duration="600">Our passion for coffee is reflected in our carefully selected and
+            curated collection of beans from some of
+            the finest
+            coffee-growing regions in the world. From the bold and robust flavors of African beans to the smooth and
+            balanced notes
+            of South American varieties, we strive to offer our customers the very best in terms of taste and quality.
+
+        </p>
+        <div class="img_sector">
+            <img src="./images/pexels-anna-urlapova-2956954.jpg" alt="" data-aos="fade-right" data-aos-duration="800">
+            <img src="./images/girl.jpg" alt="" data-aos="fade-right" data-aos-duration="300">
+            <img src="./images/pexels-chevanon-photography-312418.jpg" alt="" data-aos="fade-left"
+                data-aos-duration="300"><img src="./images/pexels-taryn-elliott-4281788.jpg" alt="" data-aos="fade-left"
+                data-aos-duration="800">
+        </div>
+    </section>
+    <section class=" page2 page3">
+        <h2 data-aos="fade-up" data-aos-duration="500">Menu</h2>
+        <p data-aos="fade-up" data-aos-duration="600">At our coffee website, we believe that coffee is more than just a
+            beverage, it's a way of life. It brings
+            people
+            together, sparks creativity, and energizes us for the day ahead. That's why we're passionate about sharing
+            our love of
+            coffee with others and helping you to discover the joy of a truly great cup of coffee.</p>
+        <div class="image2_div">
+            <div>
+
+                <h3 data-aos="flip-left" data-aos-duration="500">Drinks</h3>
+                <img src="images/coffee-3297326_640.jpg" alt="" data-aos="flip-right" data-aos-duration="500">
+                <article>
+                    La Catalina (Colombia) <br>Guarumales (Ecuado)<br>Rukondo (Rwanda)<br>Peppermint Tea<br>Black
+                    tea<br>
+                </article>
+            </div>
+            <div>
+                <h3>Food</h3>
+                <img src="images/food-3249174_640.jpg" alt="" data-aos="flip-left" data-aos-duration="500">
+                <article>
+                    Frittata (Herb and Veggie<br>Italian, Corned Beef<br>Breakfast sandwich<br>Cobb salad <br>Various
+                    baked
+                    goods<br>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="page2 page4">
+        <h3 data-aos="fade-up" data-aos-delay="300">Location</h3>
+        <span class="img4" data-aos="zoom-in" data-aos-delay="200">
+            <img src="images/map.png" alt="">
+            <article class="time" data-aos="fade-right" data-aos-delay="400">
+                <h2>HOURS</h2>
+                <p> Mon-Thurs -- 7am - 8pm <br>
+                    Fri-Sun -- 8am - 10pm
+                </p>
+            </article>
+        </span>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</body>
+
+</html>
