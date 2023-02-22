@@ -37,19 +37,16 @@
     align-items: center;
     flex-direction: column;
     background-color: #e9dccd;
-    ;
 }
 
 .page2 h2 {
     font-size: 35px;
-
 }
 
 .page2 p {
     font-size: 18px;
     line-height: 1.7;
 }
-
 .img_sector {
     width: 100%;
     display: flex;
