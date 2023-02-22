@@ -14,3 +14,32 @@ body {
     width: 100%;
     height: auto;
 }
+.vid {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    z-index: 12345;
+    animation: show 5s infinite;
+}
+
+.vid h3::before {
+    display: block;
+    background-color: white;
+    width: 200px;
+    height: 40px;
+    content: "";
+    z-index: 123;
+    margin-bottom: -50px;
+    animation: show 5s infinite;
+}
+
+@keyframes show {
+    100% {
+        background-color: #36384c;
+        display: none;
+    }
+}
